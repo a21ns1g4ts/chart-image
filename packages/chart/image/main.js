@@ -11,7 +11,8 @@ exports.main = (args) => {
 
     return {"body": {
         data: {
-            url: barChart.toURL()
+            url: barChart.toURL(),
+            dataURI: barChart.toDataURI()
         }
     }}
   }
