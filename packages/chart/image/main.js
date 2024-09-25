@@ -1,6 +1,6 @@
 const ChartJSImage = require('chart.js-image');
 
-exports.main = (args) => {
+exports.main = async (args) => {
     const data = args
 
     const barChart = ChartJSImage()
@@ -9,10 +9,12 @@ exports.main = (args) => {
         .width(500)
         .height(300);
 
+        const dataURI = await barChart.toDataURI();
+
     return {"body": {
         data: {
             url: barChart.toURL(),
-            dataURI: barChart.toDataURI()
+            dataURI: dataURI
         }
     }}
   }
