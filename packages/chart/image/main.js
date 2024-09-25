@@ -53,6 +53,6 @@ exports.main = async (args) => {
         }
     }
 
-    return {"body": responseData}
+    return {"body": {data: responseData}};
   }
 

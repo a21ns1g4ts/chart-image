@@ -1,6 +1,6 @@
 {
   "name": "chart-image",
-  "version": "0.0.16",
+  "version": "0.0.24",
   "description": "Serverless chart image generator",
   "main": "main.js",
   "dependencies": {
