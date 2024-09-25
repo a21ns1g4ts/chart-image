@@ -4,6 +4,7 @@
   "description": "Serverless chart image generator",
   "main": "main.js",
   "dependencies": {
+    "atob": "^2.1.2",
     "chart.js-image": "^6.1.3"
   },
   "devDependencies": {}
